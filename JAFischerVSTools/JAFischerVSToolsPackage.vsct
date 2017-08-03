@@ -80,6 +80,13 @@
           <ButtonText>Invoke AlignTrailingBackSlashes</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidJAFischerVSToolsPackageCmdSet" id="cmdidToggleComment" priority="0x0100" type="Button">
+        <Parent guid="guidJAFischerVSToolsPackageCmdSet" id="JAFischerMenuGroup" />
+        <Icon guid="guidImages5" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Invoke ToggleComment</ButtonText>
+        </Strings>
+      </Button>
     </Buttons>
 
     <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
@@ -93,6 +100,7 @@
       <Bitmap guid="guidImages1" href="Resources\AlignAssignments.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
       <Bitmap guid="guidImages3" href="Resources\AlignComments.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
       <Bitmap guid="guidImages4" href="Resources\AlignTrailingBackSlashes.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+      <Bitmap guid="guidImages5" href="Resources\ToggleComment.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
     </Bitmaps>
   </Commands>
 
@@ -107,6 +115,7 @@
       <IDSymbol value="4129" name="cmdidAlignAssignments" />
       <IDSymbol value="4130" name="cmdidAlignComments" />
       <IDSymbol value="4131" name="cmdidAlignTrailingBackSlashes" />
+      <IDSymbol value="4132" name="cmdidToggleComment" />
     </GuidSymbol>
 
     <GuidSymbol name="guidImages" value="{04908bb9-be11-4602-a5b0-0f6c24370b31}">
@@ -146,6 +155,15 @@
     </GuidSymbol>
   
     <GuidSymbol value="{d50028b2-16e0-40c7-b43b-72b36d9d78c7}" name="guidImages4">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{a84b8b72-e441-48d0-b95b-5759282d8d64}" name="guidImages5">
       <IDSymbol name="bmpPic1" value="1" />
       <IDSymbol name="bmpPic2" value="2" />
       <IDSymbol name="bmpPicSearch" value="3" />

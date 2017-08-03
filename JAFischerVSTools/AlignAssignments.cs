@@ -34,7 +34,6 @@ namespace JAFischerVSTools
         private readonly Package package;
 
         private readonly DTE2 dte;
-        private const string blanks = "                                                                                                                                     ";
         private readonly Regex assignmentRegex = new Regex("=[^=]");
 
         /// <summary>
@@ -129,7 +128,7 @@ namespace JAFischerVSTools
                 int pos = assignmentRegex.Match(line).Index;
                 if (pos != -1)
                 {
-                    line = line.Substring(0, pos) + blanks.Substring(0, alignment_column - pos + 1) + line.Substring(pos);
+                    line = line.Substring(0, pos) + Utility.Blanks.Substring(0, alignment_column - pos + 1) + line.Substring(pos);
                     sel.Insert(line);
                 }
             }

@@ -35,7 +35,6 @@ namespace JAFischerVSTools
         private readonly Package package;
 
         private readonly DTE2 dte;
-        private const string blanks = "                                                                                                                                     ";
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AlignComments"/> class.
@@ -133,7 +132,7 @@ namespace JAFischerVSTools
                 var pos = line.IndexOf("//");
                 if (pos != -1)
                 {
-                    line = line.Substring(0, pos) + blanks.Substring(0, alignment_column - pos + 2) + line.Substring(pos);
+                    line = line.Substring(0, pos) + Utility.Blanks.Substring(0, alignment_column - pos + 2) + line.Substring(pos);
                     sel.Insert(line);
                 }
             }

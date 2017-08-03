@@ -77,6 +77,7 @@ namespace JAFischerVSTools
             AlignAssignments.Initialize(this);
             AlignComments.Initialize(this);
             AlignTrailingBackSlashes.Initialize(this);
+            ToggleComment.Initialize(this);
         }
 
         private void setupSmartHyphen()
@@ -91,9 +92,11 @@ namespace JAFischerVSTools
 
         private void onBeforeKeyPress(string keyPress, TextSelection selection, bool inStatementCompletion, ref bool cancelKeyPress)
         {
-
             if (keyPress == "-" && selection.CurrentColumn > 1)
             {
+                if (selection.ActivePoint.AtStartOfLine)
+                    return;
+
                 selection.CharLeft(true);
                 string previousChar = selection.Text;
 

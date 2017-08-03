@@ -57,6 +57,7 @@
     <Compile Include="JAFischerVSToolsPackage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TodoComment.cs" />
+    <Compile Include="ToggleComment.cs" />
     <Compile Include="Utility.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -77,6 +78,7 @@
     <Content Include="Resources\Command1.png" />
     <Content Include="Resources\JAFischerVSToolsPackage.ico" />
     <Content Include="Resources\TodoComment.png" />
+    <Content Include="Resources\ToggleComment.png" />
     <Content Include="stylesheet.css" />
   </ItemGroup>
   <ItemGroup>
